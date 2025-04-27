@@ -1,0 +1,24 @@
+.navbar-container {
+    width: 100vw;
+    height: 10vh;
+    background-color: #1e4ba7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: black;
+  }
+  
+  .navbar-title {
+    font-size: 2.5rem;
+    color: #ebf4ff; /* equivalent to Tailwind's blue-50 */
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .navbar-plane {
+    height: 43px;
+    position: absolute;
+    left: 4vw;
+  }

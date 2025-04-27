@@ -1,0 +1,94 @@
+
+.card {
+    width: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    margin: 16px;
+    height: 50%;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+
+  .card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .card-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .like-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+  }
+  
+
+  .heart-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+  }
+  
+  .heart-button:hover {
+    transform: scale(1.1);
+  }
+
+  .heart-icon {
+    color: #e53e3e;
+    width: 24px;
+    height: 24px;
+    transition: all 0.2s ease;
+  }
+
+  .vote-count {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4a5568;
+    margin-left: 8px;
+    min-width: 20px;
+    text-align: center;
+  }
+
+  @keyframes heartBeat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.2); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  .liked {
+    animation: heartBeat 0.5s ease;
+    color: #e53e3e; /* Red color for liked state */
+  }
+  .vote-button {
+    gap: 8px;
+  }
